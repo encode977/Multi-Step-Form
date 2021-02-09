@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Steps, Step } from "react-step-builder";
+import Step1 from "./Components/Step1";
+import Step2 from "./Components/Step2";
+import Step3 from "./Components/Step3";
+import FinalStep from "./Components/FinalStep";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__body">
+        <h3>Create your Demat account just in few click.</h3>
+        <p>please fill all the details mention.</p>
+        <Steps>
+          <Step component={Step1} />
+          <Step component={Step2} />
+          <Step component={Step3} />
+          <Step component={FinalStep} />
+        </Steps>
+      </div>
     </div>
   );
 }
