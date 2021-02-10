@@ -58,3 +58,15 @@ h3 {
   margin-left: 15px;
   margin-top: 20px;
 }
+
+.MuiAccordionDetails-root {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px 16px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.finalStep {
+  margin-top: 20px;
+}

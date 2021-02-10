@@ -13,7 +13,7 @@ function Step2(props) {
         <div className="form__control">
           <input
             type="text"
-            name="Country"
+            name="country"
             value={props.getState("name")}
             onChange={props.handleChange}
             placeholder="Country"
@@ -22,7 +22,7 @@ function Step2(props) {
         <div className="form__control">
           <input
             type="text"
-            name="Province"
+            name="province"
             value={props.getState("name")}
             onChange={props.handleChange}
             placeholder="Province"
